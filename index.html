@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Join Our Team</title>
+</head>
+<body>
+    <h1 id="title">Join Our Team</h1>
+    <p id="description">Thank you for your interest in becoming a part the SugarCubes® family. Please fill out this form to know more about you.</p>
+
+    <form action="" id="survey-form">
+        <fieldset>    
+            <legend>Personal Information</legend>
+            <label for="name" id="name-label">Name: <input type="text" name="name" id="name" placeholder="Enter your full name" required></label>
+            <label for="age" id="number-label">Age: <input type="number" name="number" id="number" placeholder="in years" min="18" max="120" ></label>
+            <label for="email" id="email-label">Email: <input type="email" name="email" id="email" placeholder="Enter your email address" required></label>
+            <label for="phone-number" id="phone-number-label">Phone Number: <input type="tel" name="phone-number" id="phone-number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="000-000-0000" required></label>
+        </fieldset>
+        <fieldset>
+            <legend>Which option would best describe your background?</legend>
+            <select name="select-background" id="dropdown" required>
+                <option value="">(Please select one option)</option>
+                <option value="1">I'm a former employee</option>
+                <option value="2">I've worked in other cafes</option>
+                <option value="3">I have worked in customer service</option>
+                <option value="4">No experience</option>
+                <option value="5">Other</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Please fill out this information</legend>
+            <label>Which positions are of your interest?</label>
+            <label for="barista">Barista <input type="checkbox" name="positions" value="barista" id="barista"></label>
+            <label for="waiter">Waiter/Waitress <input type="checkbox" name="positions" value="waiter" id="waiter"></label>
+            <label for="cashier">Cashier <input type="checkbox" name="positions" value="cashier" id="cashier"></label>
+            <label for="kitchen-staff">Kitchen Staff <input type="checkbox" name="positions" value="kitchen-staff" id="kitchen-staff"></label>
+            <label for="supervisor">Shift Supervisor <input type="checkbox" name="positions" value="supervisor"></label>
+            <hr>
+            We believe in healthy corporate competition, but please answer with honesty, have you ever worked for our competitors, SugarBalls®? (We clarify this won't bias your application)
+            <br><br>
+            <label for="yes">Yes <input class="inline" type="radio" name="yesno" id="yes" value="yes"></label>
+            <label for="no">No <input class="inline" type="radio" name="yesno" id="no" value="no" checked></label>
+        </fieldset>
+        <fieldset>
+            <legend>Please tell us something about you</legend>
+            <textarea name="bio" id="bio" cols="30" rows="3" placeholder="Aspirations, hobbies, personal experiences in other jobs..."></textarea>
+            <br><br>
+            <label for="resume">Finally, upload your resume (.pdf format) <input type="file" name="resume" id="resume"></label> 
+        </fieldset>
+        <input type="submit" name="submit" id="submit">
+
+    </form>
+    
+</body>
+</html>
